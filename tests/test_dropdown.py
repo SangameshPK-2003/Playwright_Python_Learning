@@ -26,4 +26,4 @@ def test_dropdown_selection():
 
 
 # Call test manually (temporary)
-test_dropdown_selection()
+# test_dropdown_selection()
