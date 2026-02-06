@@ -52,7 +52,7 @@ The goal is **consistent daily progress**, not perfection.
 ---
 
 ## 🧱 Project Structure
-
+``` 
 Playwright_Python_Learning/
 │
 ├── tests/ # Real automated tests
@@ -61,6 +61,7 @@ Playwright_Python_Learning/
 ├── pytest.ini # PyTest configuration
 └── README.md # Project documentation
 
+```
 ---
 
 ## 🎯 Learning Philosophy
