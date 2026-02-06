@@ -11,43 +11,17 @@ The goal is **consistent daily progress**, not perfection.
 
 ---
 
-## 📅 Daily Learning Progress
+## 📅 Progress Summary
 
-### Day 1 – Setup & First Script
-- Installed Python & Playwright
-- Ran first browser automation script
+So far completed:
 
-### Day 2 – Locators & Actions
-- Learned Playwright locators
-- Performed basic UI actions
+- Playwright setup and basic automation  
+- Locators, actions, waits, and assertions  
+- Proper project structure (tests, utils, practice)  
+- PyTest integration and configuration  
+- PyTest fixtures for browser lifecycle management  
 
-### Day 3 – Buttons, Checkboxes & Logic
-- Click actions and checkbox handling
-- Understanding conditions vs assertions
-
-### Day 4 – Dropdowns & Smart Waits
-- Dropdown selection techniques
-- Difference between hard waits and smart waits
-
-### Day 5 – Real Assertions
-- Introduced `assert`
-- Understood pass vs fail behavior
-- Test failure handling
-
-### Day 6 – Project Structure
-- Separated **tests** and **utils**
-- Learned Python package structure
-- Module execution with `python -m`
-
-### Day 7 – PyTest Introduction
-- Installed PyTest
-- Automatic test discovery
-- Controlled test execution using `pytest.ini`
-
-### Day 8 – PyTest Fixtures
-- Implemented browser fixture in `conftest.py`
-- Automatic setup and teardown
-- Clean, scalable test design
+📖 Detailed day-by-day learning is maintained in **LEARNING_LOG.md**.
 
 ---
 
