@@ -29,11 +29,12 @@ So far completed:
 ``` 
 Playwright_Python_Learning/
 │
-├── tests/ # Real automated tests
-├── utils/ # Helper utilities
-├── practice/ # Learning & experimental scripts
-├── pytest.ini # PyTest configuration
-└── README.md # Project documentation
+├── tests/            # Real automated tests
+├── utils/            # Helper utilities
+├── practice/         # Learning & experimental scripts
+├── pytest.ini        # PyTest configuration
+├── LEARNING_LOG.md   # Day-by-day learning journal
+└── README.md         # Project documentation
 
 ```
 ---
