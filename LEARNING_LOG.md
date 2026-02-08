@@ -61,7 +61,13 @@ while learning **QA Automation using Playwright, Python, and PyTest**.
 
 ---
 
-## Day 9
-*(To be updated after completing today’s learning)*
+## Day 9 – Multiple Tests with Shared Fixture
+- Added second test case to verify page title
+- Executed multiple tests using the same PyTest fixture
+- Observed automatic browser setup and teardown for each test
+- Understood scalability of test framework without duplicate code
+
+**Key Learning:**  
+One fixture can support multiple tests, enabling scalable and maintainable automation.
 
 ---

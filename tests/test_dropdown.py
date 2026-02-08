@@ -16,3 +16,14 @@ def test_dropdown_selection(page):
 
     # Assertion
     assert selected_text == "Option 1", "Dropdown selection failed"
+    
+def test_page_title(page):
+    """
+    Verify the page title is correct.
+    Demonstrates multiple tests using same fixture.
+    """
+
+    page.goto("https://the-internet.herokuapp.com/dropdown")
+
+    # Assertion on page title
+    assert "The Internet" in page.title()
