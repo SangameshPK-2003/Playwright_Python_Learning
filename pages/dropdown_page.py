@@ -1,0 +1,27 @@
+class DropdownPage:
+    """
+    Page Object representing the Dropdown page.
+    Contains locators and page actions.
+    """
+
+    def __init__(self, page):
+        # Store Playwright page instance
+        self.page = page
+
+        # Define locator once
+        self.dropdown = page.locator("#dropdown")
+
+    def load(self):
+        """Navigate to dropdown page with higher timeout for slow network."""
+        self.page.goto(
+        "https://the-internet.herokuapp.com/dropdown",
+        timeout=60000  # wait up to 60 seconds instead of 30
+    )
+
+    def select_option(self, option_text):
+        """Select option from dropdown."""
+        self.dropdown.select_option(label=option_text)
+
+    def get_selected_text(self):
+        """Return selected option text."""
+        return self.dropdown.locator("option:checked").inner_text()

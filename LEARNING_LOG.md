@@ -70,4 +70,14 @@ while learning **QA Automation using Playwright, Python, and PyTest**.
 **Key Learning:**  
 One fixture can support multiple tests, enabling scalable and maintainable automation.
 
+## Day 10 – Page Object Model (POM) Introduction
+- Created `pages/` folder and implemented first Page Object (`DropdownPage`)
+- Moved locators and page actions from test into Page Object class
+- Updated tests to interact through Page Object methods instead of direct locators
+- Faced real timeout failure due to slow mobile network and fixed by increasing navigation timeout
+- Successfully executed multiple tests using POM structure
+
+**Key Learning:**  
+Page Object Model separates test logic from UI implementation, making automation scalable, maintainable, and closer to real industry frameworks.
+
 ---

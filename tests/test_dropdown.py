@@ -1,21 +1,17 @@
+from pages.dropdown_page import DropdownPage
+
 def test_dropdown_selection(page):
     """
-    Test Case:
-    Verify user can select Option 1 from dropdown
+    Verify dropdown selection using Page Object Model.
     """
 
-    # Navigate to dropdown page
-    page.goto("https://the-internet.herokuapp.com/dropdown")
+    dropdown_page = DropdownPage(page)
 
-    # Locate dropdown and select option
-    dropdown = page.locator("#dropdown")
-    dropdown.select_option(label="Option 1")
+    dropdown_page.load()
+    dropdown_page.select_option("Option 1")
 
-    # Get selected text
-    selected_text = dropdown.locator("option:checked").inner_text()
+    assert dropdown_page.get_selected_text() == "Option 1"
 
-    # Assertion
-    assert selected_text == "Option 1", "Dropdown selection failed"
     
 def test_page_title(page):
     """
