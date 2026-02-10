@@ -25,3 +25,12 @@ class DropdownPage:
     def get_selected_text(self):
         """Return selected option text."""
         return self.dropdown.locator("option:checked").inner_text()
+    
+    def is_option_selected(self, expected_text):
+        """
+        Reusable verification helper.
+        Returns True if expected option is selected, else False.
+        """
+        actual_text = self.get_selected_text()
+        return actual_text == expected_text
+

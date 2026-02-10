@@ -10,7 +10,8 @@ def test_dropdown_selection(page):
     dropdown_page.load()
     dropdown_page.select_option("Option 1")
 
-    assert dropdown_page.get_selected_text() == "Option 1"
+    assert dropdown_page.is_option_selected("Option 1")
+
 
     
 def test_page_title(page):
