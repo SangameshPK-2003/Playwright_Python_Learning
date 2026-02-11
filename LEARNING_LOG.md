@@ -94,3 +94,15 @@ Page Object Model separates test logic from UI implementation, making automation
 Reusable verification helpers inside Page Objects improve readability, scalability, and maintainability of automation frameworks.
 
 ---
+
+## Day 12 – Multiple Page Objects
+- Created second Page Object for Checkboxes page
+- Implemented reusable actions and verification in new page class
+- Added separate test file for checkbox behavior
+- Executed multiple Page Objects within single PyTest framework
+
+**Key Learning:**  
+Automation frameworks handle multiple independent pages using separate Page Objects while still running under one shared structure and execution.
+
+---
+
