@@ -20,6 +20,9 @@ So far completed:
 - Proper project structure (tests, utils, practice)  
 - PyTest integration and configuration  
 - PyTest fixtures for browser lifecycle management  
+- Page Object Model navigation between pages (real user flow)
+
+
 
 📖 Detailed day-by-day learning is maintained in **LEARNING_LOG.md**.
 
