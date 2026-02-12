@@ -106,3 +106,15 @@ Automation frameworks handle multiple independent pages using separate Page Obje
 
 ---
 
+## Day 13 – Navigation Between Page Objects
+- Implemented navigation from Checkboxes page to Dropdown page
+- Returned next Page Object after navigation to model real user flow
+- Added navigation flow test case
+- Learned to verify navigation using page-specific elements instead of titles
+
+**Key Learning:**  
+Real automation frameworks connect Page Objects through navigation and validate pages using unique UI elements for reliable testing.
+
+---
+
+

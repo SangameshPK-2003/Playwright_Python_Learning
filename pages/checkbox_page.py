@@ -1,3 +1,4 @@
+from pages.dropdown_page import DropdownPage
 class CheckboxPage:
     """
     Page Object for the Checkboxes page.
@@ -20,3 +21,15 @@ class CheckboxPage:
     def is_first_checkbox_checked(self):
         """Return True if first checkbox is checked."""
         return self.checkboxes.nth(0).is_checked()
+    
+    def go_to_dropdown_page(self):
+        """
+        Navigate from Checkboxes page to Dropdown page.
+        Returns a new DropdownPage object.
+        """
+        self.page.goto("https://the-internet.herokuapp.com/dropdown", timeout=60000)
+        return DropdownPage(self.page)
+    
+
+
+
