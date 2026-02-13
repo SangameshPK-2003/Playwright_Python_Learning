@@ -1,16 +1,19 @@
+import pytest
 from pages.dropdown_page import DropdownPage
 
-def test_dropdown_selection(page):
+
+@pytest.mark.parametrize("option_text", ["Option 1", "Option 2"])
+def test_dropdown_selection(page, option_text):
     """
-    Verify dropdown selection using Page Object Model.
+    Verify dropdown selection works for multiple options.
     """
 
     dropdown_page = DropdownPage(page)
 
     dropdown_page.load()
-    dropdown_page.select_option("Option 1")
+    dropdown_page.select_option(option_text)
 
-    assert dropdown_page.is_option_selected("Option 1")
+    assert dropdown_page.is_option_selected(option_text)
 
 
     

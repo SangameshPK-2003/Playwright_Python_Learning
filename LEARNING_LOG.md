@@ -117,4 +117,13 @@ Real automation frameworks connect Page Objects through navigation and validate 
 
 ---
 
+## Day 14 – Test Data Parameterization
+- Converted dropdown test to parameterized execution using PyTest
+- Executed same test logic with multiple data inputs
+- Learned separation of test logic and test data
+- Understood importance of external data sources in real frameworks
 
+**Key Learning:**  
+Data-driven testing improves scalability, reusability, and maintainability by separating test logic from test data.
+
+---
