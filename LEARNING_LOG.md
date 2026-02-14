@@ -127,3 +127,14 @@ Real automation frameworks connect Page Objects through navigation and validate 
 Data-driven testing improves scalability, reusability, and maintainability by separating test logic from test data.
 
 ---
+
+## Day 15 – Behavioral Assertions
+- Enhanced checkbox test to verify state before and after user action
+- Implemented Arrange → Act → Assert testing pattern
+- Learned importance of preventing false positives in automation
+
+**Key Learning:**  
+Good tests must validate behavior change caused by user action, not just final static state.
+
+---
+
