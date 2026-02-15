@@ -1,21 +1,24 @@
+from tests.base_test import BaseTest
 from pages.checkbox_page import CheckboxPage
 
 
-def test_first_checkbox_behavior(page):
-    """
-    Verify checkbox state changes correctly after user action.
-    """
+class TestCheckbox(BaseTest):
 
-    checkbox_page = CheckboxPage(page)
+    def test_first_checkbox_behavior(self, page):
+        """
+        Verify checkbox state changes correctly after user action.
+        """
 
-    # Load page
-    checkbox_page.load()
+        checkbox_page = CheckboxPage(self.get_page(page))
 
-    # Initial state should be unchecked
-    assert not checkbox_page.is_first_checkbox_checked()
+        # Load page
+        checkbox_page.load()
 
-    # Perform user action
-    checkbox_page.check_first_checkbox()
+        # Initial state should be unchecked
+        assert not checkbox_page.is_first_checkbox_checked()
 
-    # Final state should be checked
-    assert checkbox_page.is_first_checkbox_checked()
+        # Perform user action
+        checkbox_page.check_first_checkbox()
+
+        # Final state should be checked
+        assert checkbox_page.is_first_checkbox_checked()

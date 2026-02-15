@@ -138,3 +138,14 @@ Good tests must validate behavior change caused by user action, not just final s
 
 ---
 
+## Day 16 – Base Test Architecture
+- Introduced BaseTest layer for shared test behavior
+- Converted checkbox test to class-based structure
+- Learned importance of centralized setup and scalability in frameworks
+
+**Key Learning:**  
+Real automation frameworks use a Base Test layer to centralize shared logic, keeping tests clean, reusable, and scalable.
+
+---
+
+
