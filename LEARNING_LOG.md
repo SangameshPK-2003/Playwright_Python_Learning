@@ -148,4 +148,13 @@ Real automation frameworks use a Base Test layer to centralize shared logic, kee
 
 ---
 
+## Day 17 – Test Stability & Smart Waiting
+- Implemented condition-based waiting using wait_for_selector
+- Learned difference between time-based sleep and smart waits
+- Understood flaky test causes and stability improvement
+
+**Key Learning:**  
+Reliable automation depends on condition-based waits instead of fixed delays, ensuring faster and more stable test execution.
+
+---
 

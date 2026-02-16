@@ -17,10 +17,19 @@ class DropdownPage:
         "https://the-internet.herokuapp.com/dropdown",
         timeout=60000  # wait up to 60 seconds instead of 30
     )
+    
+
 
     def select_option(self, option_text):
-        """Select option from dropdown."""
-        self.dropdown.select_option(label=option_text)
+        """
+        Select an option from dropdown after ensuring it is visible.
+        """
+
+        # Wait until dropdown is visible (prevents flaky timing failures)
+        self.page.wait_for_selector("#dropdown", state="visible")
+
+        # Perform selection
+        self.page.select_option("#dropdown", label=option_text)
 
     def get_selected_text(self):
         """Return selected option text."""

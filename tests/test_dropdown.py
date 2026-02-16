@@ -11,6 +11,7 @@ def test_dropdown_selection(page, option_text):
     dropdown_page = DropdownPage(page)
 
     dropdown_page.load()
+    # page.wait_for_timeout(3000)
     dropdown_page.select_option(option_text)
 
     assert dropdown_page.is_option_selected(option_text)
