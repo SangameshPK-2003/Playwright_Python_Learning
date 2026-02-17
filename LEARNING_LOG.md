@@ -158,3 +158,15 @@ Reliable automation depends on condition-based waits instead of fixed delays, en
 
 ---
 
+## Day 18 – API Testing (GET Request)
+- Wrote first API automation test using Python `requests`
+- Validated HTTP status code and JSON response structure
+- Handled real-world API failure (403) and switched to stable endpoint
+- Understood why API tests are faster and more stable than UI tests
+
+**Key Learning:**  
+API testing validates backend behavior directly, making tests faster, more reliable, and highly valuable in real QA automation.
+
+---
+
+
