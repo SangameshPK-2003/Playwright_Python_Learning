@@ -169,4 +169,16 @@ API testing validates backend behavior directly, making tests faster, more relia
 
 ---
 
+## Day 19 – POST API Testing
+- Implemented POST API automation using Python requests
+- Sent JSON payload to create new user
+- Validated status code (201) and response body data
+- Strengthened understanding of CRUD API operations
+
+**Key Learning:**  
+POST requests create new resources, and API automation must validate both status codes and returned data.
+
+---
+
+
 
