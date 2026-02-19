@@ -180,5 +180,14 @@ POST requests create new resources, and API automation must validate both status
 
 ---
 
+## Day 20 – Reusable API Client
+- Created reusable API utility functions for GET and POST requests
+- Refactored tests to use shared API client instead of direct requests calls
+- Improved framework structure and maintainability
+
+**Key Learning:**  
+Professional automation frameworks use reusable utility layers to avoid duplication and improve scalability.
+
+---
 
 
