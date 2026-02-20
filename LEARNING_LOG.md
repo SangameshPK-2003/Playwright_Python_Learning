@@ -190,4 +190,12 @@ Professional automation frameworks use reusable utility layers to avoid duplicat
 
 ---
 
+## Day 21 – Stronger API Response Validation
+- Enhanced GET API test to validate response structure
+- Verified required keys in API response
+- Learned importance of contract-level validation
 
+**Key Learning:**  
+QA must validate not just status codes, but also API response structure and required fields to ensure backend reliability.
+
+---
