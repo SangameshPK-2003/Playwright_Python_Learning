@@ -199,3 +199,17 @@ Professional automation frameworks use reusable utility layers to avoid duplicat
 QA must validate not just status codes, but also API response structure and required fields to ensure backend reliability.
 
 ---
+
+## Day 22 – Negative API Testing & Failure Integrity
+
+- Learned difference between positive and negative API testing
+- Understood importance of validating both status code and response body
+- Explored proper HTTP semantics (200 vs 201 vs 204)
+- Discussed silent failures vs visible failures
+- Understood API contract integrity and why honesty is critical in system design
+
+**Key Learning:**  
+An API that lies is more dangerous than an API that crashes.  
+Reliability and contract integrity are fundamental to system trust.
+
+---
