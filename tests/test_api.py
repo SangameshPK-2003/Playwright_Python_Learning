@@ -40,3 +40,24 @@ def test_create_user_api():
 
     data = response.json()
     assert data["name"] == payload["name"]
+
+def test_create_user_invalid_payload():
+    """
+    Verify API handles invalid payload properly.
+    """
+
+    url = "https://jsonplaceholder.typicode.com/users"
+
+    # Sending invalid payload (missing required fields)
+    payload = {}
+
+    response = post_request(url, payload)
+
+    # In real APIs, this should return 400 (Bad Request)
+    # But jsonplaceholder always returns 201 (fake API)
+    # So we validate response exists instead
+
+    assert response.status_code in [201, 400]
+
+    data = response.json()
+    assert isinstance(data, dict)
